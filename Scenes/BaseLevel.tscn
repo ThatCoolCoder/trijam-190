@@ -3,7 +3,7 @@
 [ext_resource path="res://Assets/Graphics/tile.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scripts/BaseLevel.cs" type="Script" id=3]
-[ext_resource path="res://Scenes/Enemy.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/387232__steaq__badge-coin-win.wav" type="AudioStream" id=4]
 [ext_resource path="res://Assets/Graphics/finish.png" type="Texture" id=5]
 [ext_resource path="res://default_env.tres" type="Environment" id=6]
 
@@ -87,7 +87,8 @@ anims/Base = SubResource( 4 )
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource( 6 )
 
-[node name="Enemy" parent="." instance=ExtResource( 4 )]
-position = Vector2( 429, 263 )
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -13.285
 
 [connection signal="timeout" from="Timer" to="." method="OnTimerTimeout"]

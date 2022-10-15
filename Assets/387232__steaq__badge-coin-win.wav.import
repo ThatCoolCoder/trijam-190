@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/387232__steaq__badge-coin-win.wav-a07d1307c064239dfdfe73c3c0dd497e.sample"
+
+[deps]
+
+source_file="res://Assets/387232__steaq__badge-coin-win.wav"
+dest_files=[ "res://.import/387232__steaq__badge-coin-win.wav-a07d1307c064239dfdfe73c3c0dd497e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

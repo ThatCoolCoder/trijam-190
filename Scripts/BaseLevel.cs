@@ -11,7 +11,12 @@ public class BaseLevel : Node2D
 
 		player = GetNode<Player>("Player");
 		player.OnDied += () => timer.Start();
-		player.OnWon += () => timer.Start();
+		player.OnWon += () =>
+		{
+			GetNode<AudioStreamPlayer>("AudioStreamPlayer").Play();
+			timer.Start();
+		};
+
 	}
 
 	private void OnTimerTimeout()

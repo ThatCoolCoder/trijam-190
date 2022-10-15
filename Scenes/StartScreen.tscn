@@ -23,7 +23,7 @@ margin_top = -162.0
 margin_right = 179.0
 margin_bottom = -103.0
 custom_fonts/font = SubResource( 1 )
-text = "Game Name here"
+text = "A game in the Dark"
 
 [node name="PlayButton" type="Button" parent="."]
 anchor_left = 0.5
