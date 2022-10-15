@@ -51,7 +51,10 @@ public class Enemy : KinematicBody2D
 		{
 			var collision = GetSlideCollision(i);
 			var collider = collision.Collider as Node2D;
-			if (collider.IsInGroup("Walls") || collider.IsInGroup("Enemy"))
+			var ang = Mathf.Rad2Deg((collision.Position - GlobalPosition).Angle());
+			var delta2 = (ang - RotationDegrees) % 360;
+			var angleOk = Mathf.Abs(delta2) < 45;
+			if ((collider.IsInGroup("Walls") || collider.IsInGroup("Enemy")) && angleOk)
 			{
 				RotationDegrees = (RotationDegrees + 180) % 360;
 				break;
