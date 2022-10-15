@@ -19,7 +19,9 @@ position = Vector2( 960, 224 )
 position = Vector2( 592, 224 )
 rotation = 1.57079
 
-[node name="Hint" parent="." index="6" instance=ExtResource( 3 )]
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="7"]
+
+[node name="Hint" parent="CanvasLayer" index="0" instance=ExtResource( 3 )]
 margin_left = 320.0
 margin_top = 72.0
 margin_right = 533.0

@@ -33,7 +33,9 @@ position = Vector2( 496, 400 )
 [node name="Enemy4" parent="." index="9" instance=ExtResource( 2 )]
 position = Vector2( 560, 400 )
 
-[node name="Hint" parent="." index="10" instance=ExtResource( 3 )]
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="11"]
+
+[node name="Hint" parent="CanvasLayer" index="0" instance=ExtResource( 3 )]
 margin_left = 24.0
 margin_top = 40.0
 margin_right = 762.0
