@@ -12,7 +12,6 @@ config_version=4
 
 config/name="Trijam190"
 run/main_scene="res://Scenes/StartScreen.tscn"
-boot_splash/bg_color=Color( 0.635294, 0.764706, 0.74902, 1 )
 config/icon="res://icon.png"
 
 [display]

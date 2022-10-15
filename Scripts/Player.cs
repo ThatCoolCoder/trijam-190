@@ -40,6 +40,7 @@ public class Player : KinematicBody2D
 		FeelFloorFriction(acceleration, delta);
 		velocity = velocity.LimitLength(MaxSpeed);
 		velocity = MoveAndSlide(velocity, Vector2.Zero);
+		Rotation = velocity.Angle() + Mathf.Pi / 2;
 	}
 
 	private Vector2 CheckKeybinds()

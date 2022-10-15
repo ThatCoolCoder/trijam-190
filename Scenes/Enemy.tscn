@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Assets/Graphics/enemy.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Enemy.cs" type="Script" id=2]
+[ext_resource path="res://Assets/Graphics/enemyface.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
@@ -14,11 +15,16 @@ script = ExtResource( 2 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 27.0001, 23.9999 )
+position = Vector2( 27.0001, 23.9998 )
 rotation = 1.57079
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 offset = Vector2( -11.9076, 13.3975 )
+
+[node name="Face" type="Sprite" parent="Sprite"]
+modulate = Color( 1.5, 1.5, 1.5, 1 )
+position = Vector2( -12, 13.5 )
+texture = ExtResource( 3 )
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
