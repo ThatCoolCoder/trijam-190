@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/587190__derplayer__explosion-04.wav" type="AudioStream" id=1]
+
+[node name="Boom" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )
+volume_db = -27.181
+pitch_scale = 0.68
+autoplay = true
